@@ -1,0 +1,123 @@
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+#main-container {
+	min-height:100%;
+	position:relative;
+}
+
+#main-content {
+	padding-bottom:22em;	/* Height of the footer */
+}
+
+#footer {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	min-height:17em;			/* Height of the footer */
+
+	background-image: url(../img/darkwood.png);
+	background-repeat: repeat;
+	color: white;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+h2 a {
+	color: orange;
+}
+
+h2 a:hover {
+	color: #db8e00;
+}
+
+h3 {
+	color: black;
+}
+
+h3 small {
+	font-size: 14px;
+	color: gray;
+	padding-left: 7px;
+}
+
+.center-image-div img {
+	display: block;
+	margin: 15px auto;
+}
+
+.center-content {
+	text-align:center;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding:0px;
+}
+
+.caption {
+	font-style: italic;
+	max-width: 20em;
+	margin: auto;
+}
+
+#sidebar h1 {
+	font-size: 16px;
+}
+
+#sidebar img {
+	margin-bottom: 0.5em;
+}
+
+#footer p {
+	margin-bottom: 0.5em;
+
+	font-size: 14px;
+}
+
+#footer h1 {
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 1em;
+}
+
+#footer ul {
+	margin-bottom: 0;
+}
+
+#footer a {
+	color: white;
+	background-color: rgba(255, 255, 255, 0.2);
+
+	font-size: 14px;
+
+	padding: 1px 3px 1px 3px;
+	border-radius: 3px;
+}
+
+#footer a:hover {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+#footer .links {
+	list-style: none;
+	margin-left: 0;
+}
+
+#footer .links li {
+	margin-bottom: 2px;
+}
+
+#footer hr {
+	color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255, 255, 255, 0.2);
+	border-color: rgba(255, 255, 255, 0.2);
+}

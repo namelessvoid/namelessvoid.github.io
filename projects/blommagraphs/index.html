@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>NamelessVoid - Blomma Graphs</title>
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/foundation.css">
+    <link rel="stylesheet" href="/assets/css/nameless.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NamelessVoid | Blomma Graphs</title>
+    <meta name="generator" content="nanoc 3.7.5">
+  </head>
+
+
+  <body>
+    <div id="main-container">
+      
+
+<div class="contain-to-grid">
+	<nav class="top-bar" data-topbar>
+		<ul class="title-area">
+			<li class="name">
+				<h1><a href="/">n(v*)</a></h1>
+			</li>
+			<li class="toggle-topbar menu-icon"><a href="">Menu</a></li>
+		</ul>
+
+		<section class="top-bar-section">
+			<!-- Left Nav Section -->
+			<ul class="left">
+				<li  >
+					<a href="/">Home</a>
+				</li>
+
+				<li class="has-dropdown  active ">
+					<a href="/projects/">
+						Projects
+					</a>
+					<ul class="dropdown">
+						<li >
+							<a href="/projects/">Project overview</a>
+						</li>
+						<li class="divider"></li>
+						
+							<li >
+								<a href="/projects/qrwar/">qrwar</a>
+							</li>
+						
+							<li class="active">
+								<a href="/projects/blommagraphs/">Blomma Graphs</a>
+							</li>
+						
+					</ul>
+				</li>
+
+				<li >
+					<a href="/about/">About</a>
+				</li>
+				<li >
+					<a href="/imprint/">Imprint</a>
+				</li>
+			</ul><!-- left nav section -->
+
+			<!-- Translation links -->
+			<ul class="right">
+				<li class="divider"></li>
+				<li class="has-dropdown">
+					<a href="#">
+						
+							Choose language
+						
+					</a>
+					<ul class="dropdown">
+						
+							<li class="active">
+								<a href="/projects/blommagraphs/">
+									English
+								</a>
+							</li>
+						
+							<li >
+								<a href="/de/projekte/blommagraphs/">
+									Deutsch
+								</a>
+							</li>
+						
+					</ul><!-- language drop down -->
+				</li>
+				<li class="divider"></li>
+			</ul><!-- end translation links -->
+		</section><!-- section top-bar-section -->
+	</nav>
+</div>
+
+
+      <div id="main-content">
+
+        <!-- display the title -->
+        <div class="row">
+          <div class="small-12 columns">
+            <h1>Blomma Graphs</h1>
+          </div><!-- column -->
+        </div><!-- row -->
+
+        <!-- row for main content and sidebar -->
+        <div class="row">
+          <!-- the sidebar -->
+          
+              <div id="sidebar" class="medium-3 medium-push-9 column">
+                
+	<img src="/assets/img/projects/blommagraphs-logo.png" width="200" height="200" alt="qrwar logo">
+	<div class="panel">
+		<h1>Blomma Graphs</h1>
+		<ul class="side-nav">
+			<li><a href="http://noxan.github.io/blomma-graphs/">Official website</a></li>
+			<li><a href="https://github.com/noxan/blomma-graphs">Source code repository</a></li>
+		</ul>
+	</div>
+
+              </div>
+          
+
+          <!-- the content -->
+          
+          
+            <div class="medium-9 medium-pull-3 columns">
+          
+            
+            
+
+
+<div class="row">
+	<section class="column">
+		<p>Blomma Graphs is a tool suite for the generation, scheduling and evaluation of task graphs. It was created by me and four more students of University of Applied Sciences, Augsburg, as an external project at <a href="http://lnu.se/?l=en">Linnaeus University</a>, Växjö, Sweden.</p>
+		<p>The <a href="http://noxan.github.io/blomma-graphs/">official website</a> containts the project documentation as well as presentations we conducted at the university.</p>
+		<p><a href="https://github.com/noxan/blomma-graphs">Source code</a> can be found on GitHub.</p>
+	</section>
+</div>
+
+<div class="row"><div class="small-12 columns"><hr></div></div>
+
+<div class="row">
+	<section class="column">
+		<h2>Topic</h2>
+		<p>Multi-core architectures of computers, which are common for today, demand processes to be parallelised as efficiently as possible to maximize utilisation of cores and to minimize communication costs between them.</p>
+		<p>For this reason, processes are separated into atomic operations, called tasks. Dependencies between tasks create a directed, acyclic graph, called task graph. Nodes are formed by tasks whereas dependencies are modelled by edges. Since each task needs some time to complete and time is spent for communication between tasks (e.g. to exchange data), both, nodes and edges, are weighted. Communication time is only needed if two dependent tasks are not executed on the same CPU-core.</p>
+		<p>The project goal was to schedule these tasks most efficiently on a pre-defined architecture (i.e. number of cores). Different scheduling algorithms have been implemented as well as tools to evaluate the results automatically.
+
+		<div class="center-image-div">
+			<a href="javascript:" onclick="window.open('/assets/img/projects/blommagraphs/taskgraph.png', '_blank');return false;"><img  src="/assets/img/projects/blommagraphs/taskgraph.png" alt="Beispiel für einen Task-Graphen." width="200px" keepaspectratio></a>
+			<p class="text-center caption">Example task graph. Numbers on nodes specify the execution time of a task whereas numbers on edges label the communcation time.</p>
+		</div>
+	</section>
+</div>
+
+<div class="row"><div class="small-12 columns"><hr></div></div>
+
+<div class="row">
+	<section class="column">
+		<h2>The Blomma Graphs tool suite</h2>
+		<p>The Blomma Graphs tool suite is the result of the project. It can be used to generate and schedule task graphs and to evaluate the produced results.</p>
+
+		<p>To create new task graphs, a task graph generator has been built. A variety of parameters like number of tasks, branching factor and intervals for execution and communication times can be configured to generate different kinds of graphs. These can be used to evaluate scheduling algorithms under different working conditions.</p>
+
+		<p>To represent task graphs in human readable form, a serializer has been implemented using the  <a href="http://www.kasahara.elec.waseda.ac.jp/schedule/format_e.html">STG format</a> (with communication costs). This is also used to save task graphs into files.</p>
+
+		<p>Three scheduling algorithms have been implemented:</p>
+		<ul>
+			<li>LAST (Localized Allocation of Static Tasks)</li>
+			<li>DLS (Dynamic Level Scheduling)</li>
+			<li>Genetic algorithm (developed by ourselves)</li>
+		</ul>
+
+		<p>It is also possible to schedule streams of task graphs, i.e. one process is executed multiple times in paralllel. A simple concept merges a number of graphs into one and uses scheduling algorithms mentionend above. In addition, a custom algorithm has been implemented to schedule multiple task graphs.</p>
+
+		<p>To compare the results of different approaches, an evaluation tool has been developed. It creates a set of task graphs, schedules them using the available algorithms and generatees a visualized representation of the results. Among the evaluated characteristics of each algorithm are its runtime, satisfaction of deadlines and duration of the schedule. By using the output of the evaluation tool, it is possible to assess the quality of scheduling algorithms. <a href="http://noxan.github.io/blomma-graphs/presentations/sprint4/statistics.html">Some examples</a> can be found on the <a href="http://noxan.github.io/blomma-graphs/">official webseite</a>.
+	</section>
+</div>
+
+          </div>
+        </div><!-- row for main content and sidebar -->
+
+
+      </div><!-- #main-content -->
+
+      <div id="footer">
+        
+
+<!-- sitemap -->
+<div class="row">
+	<!-- home -->
+  <div class="small-12 medium-1 columns">
+    <h1><a href="/">Home</a></h1>
+  </div>
+
+	<!-- projects -->
+  <div class="small-12 medium-2 columns">
+    <h1><a href="/projects/">Project overview</a></h1>
+    <ul class="links">
+      
+        <li><a href="/projects/qrwar/">qrwar</a></li>
+      
+        <li><a href="/projects/blommagraphs/">Blomma Graphs</a></li>
+      
+    </ul>
+  </div>
+
+	<!-- about -->
+  <div class="small-12 medium-2 columns">
+    <h1><a href="/about/">About</a></h1>
+  </div>
+
+	<!-- imprint -->
+  <div class="small-12 medium-2 columns">
+    <h1><a href="/imprint/">Imprint</a></h1>
+  </div>
+
+	<!-- ugly spacer ;) -->
+  <div class="medium-5 columns">
+  </div>
+</div><!-- row -->
+<!-- end sitemap -->
+
+<div class="row"><div class="small-12 columns"><hr></div></div>
+
+<!-- copyright -->
+<div class="row">
+  <div class="small-12 column">
+    <p>&#169; 2014 Simon Kerler aka NamelessVoid. This website was published under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a> and was created with <a href="http://nanoc.ws/">nanoc</a>. It uses <a href="http://subtlepatterns.com/">Subtle Patterns</a> by Atle Mo.</p>
+  </div><!-- column -->
+</div><!-- row -->
+<!-- end copyright -->
+
+      </div><!-- #footer -->
+    </div><!-- #main-container -->
+
+        <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/foundation_min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+
+  </body>
+</html>
