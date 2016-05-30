@@ -10,7 +10,8 @@ html, body {
 }
 
 #main-content {
-	padding-bottom:22em;	/* Height of the footer */
+	padding-top:2em;
+	padding-bottom:26em;	/* Height of the footer */
 }
 
 #footer {

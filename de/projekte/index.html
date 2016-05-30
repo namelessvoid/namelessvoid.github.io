@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/assets/css/nameless.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NamelessVoid | Projekt Übersicht</title>
-    <meta name="generator" content="nanoc 3.7.5">
+    <meta name="generator" content="nanoc 4.1.4">
   </head>
 
 
@@ -18,9 +18,9 @@
 
 <div class="contain-to-grid">
 	<nav class="top-bar" data-topbar>
-		<ul class="title-area">
+		<ul class="title-area" style="margin-right: 10px; margin-left: 10px;">
 			<li class="name">
-				<h1><a href="/de/">n(v*)</a></h1>
+			<a href="/de/"><img src="/assets/img/namelessvoid-logo.png" alt="n(v*)" width="70px" style="max-height: 100%; max-width: 100%; width: auto; height:auto; top: 0; left:0; bottom:0;right:0;margin:auto;"></a>
 			</li>
 			<li class="toggle-topbar menu-icon"><a href="">Menu</a></li>
 		</ul>
@@ -41,6 +41,10 @@
 							<a href="/de/projekte/">Projekt Übersicht</a>
 						</li>
 						<li class="divider"></li>
+						
+							<li >
+								<a href="/de/projekte/n-body-simulation-engine/">N-Körper Simulationsengine</a>
+							</li>
 						
 							<li >
 								<a href="/de/projekte/qrwar/">qrwar</a>
@@ -72,15 +76,15 @@
 					</a>
 					<ul class="dropdown">
 						
-							<li >
-								<a href="/projects/">
-									English
-								</a>
-							</li>
-						
 							<li class="active">
 								<a href="/de/projekte/">
 									Deutsch
+								</a>
+							</li>
+						
+							<li >
+								<a href="/projects/">
+									English
 								</a>
 							</li>
 						
@@ -117,13 +121,45 @@
 
 
 	<div class="row">
-		<!-- project logo -->
-		<div class="small-12 columns medium-4 medium-push-8 center-content">
-			<img src="/assets/img/projects/qrwar-logo.png" ></img>
-		</div>
+		
+			<div class="small-12 columns">
+		
 
-		<!-- project short info -->
-		<div class="small-12 medium-8 medium-pull-4 columns">
+		
+			<section>
+				<h2><a href="/de/projekte/n-body-simulation-engine/">Generische N-Körper Simulationsengine mit GPU-Unterstützung</a> <small>(2014-2015)</small></h2>
+				<p>
+					Meine Bachelorarbeit, die ich an der Hochschule Augsburg verfasste.</p><p>Partikel- bzw. N-Körper-Systeme werden in der Forschung und der Computergrafik für viele verschiedene Anwendungsfälle verwendet. Diese Arbeit bietet eine generische Engine, mit der beliebige solcher Systeme modelliert, berechnet und gerendert werden können. Dabei wird von der hochgradig parallelen Architektur von Grafikkarten Gebrauch gemacht, indem Berechnungen auf mit Hilfe von OpenGL Compute Shadern auf diese ausgelagert werden.
+					<a href="/de/projekte/n-body-simulation-engine/">Weiterlesen...</a>
+				</p>
+			</section>
+			<section class="tags">
+				
+				<span class="info label">C++</span>
+				
+				<span class="info label">OpenGL 4.3</span>
+				
+			</section>
+		</div>
+	</div>
+
+	
+		<div class="row"><div class="small-12 columns"><hr></div></div>
+	
+
+
+
+	<div class="row">
+		
+			
+			<div class="small-12 columns medium-4 medium-push-8 center-content">
+				<img src="/assets/img/projects/qrwar/qrwar-logo.png" ></img>
+			</div>
+
+			<div class="small-12 medium-8 medium-pull-4 columns">
+		
+
+		
 			<section>
 				<h2><a href="/de/projekte/qrwar/">qrwar</a> <small>(2013 - 2014)</small></h2>
 				<p>
@@ -152,13 +188,16 @@
 
 
 	<div class="row">
-		<!-- project logo -->
-		<div class="small-12 columns medium-4 medium-push-8 center-content">
-			<img src="/assets/img/projects/blommagraphs-logo.png" ></img>
-		</div>
+		
+			
+			<div class="small-12 columns medium-4 medium-push-8 center-content">
+				<img src="/assets/img/projects/blommagraphs/blommagraphs-logo.png" ></img>
+			</div>
 
-		<!-- project short info -->
-		<div class="small-12 medium-8 medium-pull-4 columns">
+			<div class="small-12 medium-8 medium-pull-4 columns">
+		
+
+		
 			<section>
 				<h2><a href="/de/projekte/blommagraphs/">Blomma Graphs</a> <small>(2013)</small></h2>
 				<p>
@@ -198,6 +237,8 @@
   <div class="small-12 medium-2 columns">
     <h1><a href="/de/projekte/">Projekt Übersicht</a></h1>
     <ul class="links">
+      
+        <li><a href="/de/projekte/n-body-simulation-engine/">N-Körper Simulationsengine</a></li>
       
         <li><a href="/de/projekte/qrwar/">qrwar</a></li>
       
