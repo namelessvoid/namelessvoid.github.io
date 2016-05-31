@@ -5,20 +5,27 @@ html, body {
 }
 
 #main-container {
+	height: 100%;
 	min-height:100%;
-	position:relative;
+	/*position:relative;*/
 }
 
+html>body #main-container {height:auto;}
 #main-content {
-	padding-top:2em;
-	padding-bottom:26em;	/* Height of the footer */
+	padding-top: 5em;
+	padding-bottom: 11em;
+
+	/* Height of the footer */
+	/*padding-bottom:26em;*/
 }
 
 #footer {
-	position:absolute;
+	/*position:absolute;*/
 	bottom:0;
 	width:100%;
-	min-height:17em;			/* Height of the footer */
+
+	/* Height of the footer */
+	/*min-height:17em;*/
 
 	background-image: url(../img/darkwood.png);
 	background-repeat: repeat;
