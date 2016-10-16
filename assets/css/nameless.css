@@ -1,131 +1,64 @@
-html, body {
-	margin:0;
-	padding:0;
-	height:100%;
+body {
+	font-family: 'Andada', serif;
 }
 
-#main-container {
-	height: 100%;
-	min-height:100%;
-	/*position:relative;*/
+h1, h2, h3 {
+	color: #fb7100;
+	font-family: 'Andada', serif;
 }
 
-html>body #main-container {height:auto;}
-#main-content {
-	padding-top: 5em;
-	padding-bottom: 11em;
-
-	/* Height of the footer */
-	/*padding-bottom:26em;*/
+a:hover {
+	color: #fb7100;
 }
 
-#footer {
-	/*position:absolute;*/
-	bottom:0;
-	width:100%;
-
-	/* Height of the footer */
-	/*min-height:17em;*/
-
-	background-image: url(../img/darkwood.png);
-	background-repeat: repeat;
-	color: white;
+a:active {
+	color: #fb7100;
 }
 
-h1 {
-	font-weight: bold;
+a {
+	color: #fb7100;
 }
 
-h3 {
-	font-size: 16px;
-	font-weight: bold;
-}
-
-h2 a {
-	color: orange;
-}
-
-h2 a:hover {
-	color: #db8e00;
-}
-
-h3 {
-	color: black;
-}
-
-h3 small {
-	font-size: 14px;
-	color: gray;
-	padding-left: 7px;
-}
-
-.center-image-div img {
-	display: block;
-	margin: 15px auto;
-}
-
-.center-content {
-	text-align:center;
-	margin-top:0px;
-	margin-bottom:0px;
-	padding:0px;
-}
-
-.caption {
-	font-style: italic;
-	max-width: 20em;
-	margin: auto;
-}
-
-#sidebar h1 {
-	font-size: 16px;
-}
-
-#sidebar img {
-	margin-bottom: 0.5em;
-}
-
-#footer p {
-	margin-bottom: 0.5em;
-
-	font-size: 14px;
-}
-
-#footer h1 {
-	font-size: 16px;
-	font-weight: bold;
-	margin-top: 1em;
-}
-
-#footer ul {
-	margin-bottom: 0;
-}
-
-#footer a {
-	color: white;
-	background-color: rgba(255, 255, 255, 0.2);
-
-	font-size: 14px;
-
-	padding: 1px 3px 1px 3px;
-	border-radius: 3px;
-}
-
-#footer a:hover {
-	background-color: rgba(255, 255, 255, 0.4);
-}
-
-#footer .links {
+ul {
 	list-style: none;
-	margin-left: 0;
+	margin: 0;
 }
 
-#footer .links li {
-	margin-bottom: 2px;
+.margin-bottom {
+	margin-bottom: 5px;
 }
 
-#footer hr {
-	color: rgba(255, 255, 255, 0.2);
-	background-color: rgba(255, 255, 255, 0.2);
-	border-color: rgba(255, 255, 255, 0.2);
+.nav-separator {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	height: 1px;
+	width: 4em;
+	border-color: #DDDDDD;
+}
+
+.content {
+	margin-bottom: 4em !important;
+	margin-top: 4em;
+}
+
+/* Foundation overwrites */
+.top-bar-section ul li > a {
+	font-family: 'Andada', serif;
+}
+
+.top-bar,
+.top-bar.expanded .title-area,
+.top-bar-section ul li,
+.top-bar-section ul li:hover:not(.has-form) > a,
+.top-bar .toggle-topbar.menu-icon a,
+.top-bar-section ul li > a {
+	background-color: white;
+	color: #fb7100;
+}
+
+.divider {
+	border-color: #DDDDDD !important;
+}
+.top-bar .toggle-topbar.menu-icon a span::after {
+	box-shadow: 0 0 0 1px #fb7100, 0 7px 0 1px #fb7100, 0 14px 0 1px #fb7100;
 }
