@@ -35,9 +35,11 @@
         
           <li><a href="/projects/n-body-simulation-engine/">N-body Simulation Engine</a></li>
         
-          <li><a href="/projects/qrwar/">qrwar</a></li>
+          <li><a href="/projects/cellplugin/">Cell Plugin</a></li>
         
           <li><a href="/projects/pheromander/">Pheromander</a></li>
+        
+          <li><a href="/projects/qrwar/">qrwar</a></li>
         
           <li><a href="/projects/blommagraphs/">> Blomma Graphs</a></li>
         
@@ -65,9 +67,11 @@
         
           <li><a href="/projects/n-body-simulation-engine/">N-body Simulation Engine</a></li>
         
-          <li><a href="/projects/qrwar/">qrwar</a></li>
+          <li><a href="/projects/cellplugin/">Cell Plugin</a></li>
         
           <li><a href="/projects/pheromander/">Pheromander</a></li>
+        
+          <li><a href="/projects/qrwar/">qrwar</a></li>
         
           <li><a href="/projects/blommagraphs/">> Blomma Graphs</a></li>
         
@@ -106,10 +110,10 @@
 		<p>For this reason, processes are separated into atomic operations, called tasks. Dependencies between tasks create a directed, acyclic graph, called task graph. Nodes are formed by tasks whereas dependencies are modelled by edges. Since each task needs some time to complete and time is spent for communication between tasks (e.g. to exchange data), both, nodes and edges, are weighted. Communication time is only needed if two dependent tasks are not executed on the same CPU-core.</p>
 		<p>The project goal was to schedule these tasks most efficiently on a pre-defined architecture (i.e. number of cores). Different scheduling algorithms have been implemented as well as tools to evaluate the results automatically.
 
-		<div class="center-image-div">
-			<a href="javascript:" onclick="window.open('/assets/img/projects/blommagraphs/taskgraph.png', '_blank');return false;"><img  src="/assets/img/projects/blommagraphs/taskgraph.png" alt="Beispiel für einen Task-Graphen." width="200px" keepaspectratio></a>
-			<p class="text-center caption">Example task graph. Numbers on nodes specify the execution time of a task whereas numbers on edges label the communcation time.</p>
-		</div>
+		<a href="javascript:" onclick="window.open('/assets/img/projects/blommagraphs/taskgraph.png', '_blank');return false;">
+			<img  class="center-image" src="/assets/img/projects/blommagraphs/taskgraph.png" alt="Beispiel für einen Task-Graphen." width="200px" keepaspectratio>
+		</a>
+		<p class="text-center caption">Example task graph. Numbers on nodes specify the execution time of a task whereas numbers on edges label the communcation time.</p>
 	</section>
 
 <div class="row"><div class="small-12 columns"><hr></div></div>
@@ -123,11 +127,12 @@
 		<p>To represent task graphs in human readable form, a serializer has been implemented using the  <a href="http://www.kasahara.elec.waseda.ac.jp/schedule/format_e.html">STG format</a> (with communication costs). This is also used to save task graphs into files.</p>
 
 		<p>Three scheduling algorithms have been implemented:</p>
-		<ul>
+		<ul class="circle">
 			<li>LAST (Localized Allocation of Static Tasks)</li>
 			<li>DLS (Dynamic Level Scheduling)</li>
 			<li>Genetic algorithm (developed by ourselves)</li>
 		</ul>
+		<p></p>
 
 		<p>It is also possible to schedule streams of task graphs, i.e. one process is executed multiple times in paralllel. A simple concept merges a number of graphs into one and uses scheduling algorithms mentionend above. In addition, a custom algorithm has been implemented to schedule multiple task graphs.</p>
 

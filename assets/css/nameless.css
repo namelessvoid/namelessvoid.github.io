@@ -58,3 +58,8 @@ ul > ul {
 .top-bar .toggle-topbar.menu-icon a span::after {
 	box-shadow: 0 0 0 1px #fb7100, 0 7px 0 1px #fb7100, 0 14px 0 1px #fb7100;
 }
+
+.center-image {
+	display: block;
+	margin: auto;
+}
