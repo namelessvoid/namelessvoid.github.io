@@ -20,6 +20,10 @@ ul > ul {
 	margin-left: 7px;
 }
 
+table {
+	margin-top: 15px;
+}
+
 .margin-bottom {
 	margin-bottom: 5px;
 }
@@ -64,6 +68,7 @@ ul > ul {
 	margin: auto;
 }
 
-.shadow {
+.its-a-me {
 	box-shadow: 5px 10px 5px gray;
+	margin-bottom: 1.25rem;
 }
