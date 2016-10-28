@@ -63,3 +63,7 @@ ul > ul {
 	display: block;
 	margin: auto;
 }
+
+.shadow {
+	box-shadow: 5px 10px 5px gray;
+}
