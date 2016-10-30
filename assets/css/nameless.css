@@ -72,3 +72,7 @@ table {
 	box-shadow: 5px 10px 5px gray;
 	margin-bottom: 1.25rem;
 }
+
+.project-logo {
+	max-height: 150px;
+}
