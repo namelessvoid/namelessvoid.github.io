@@ -1,148 +1,308 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="en">
-    <head>
+  <head>
+    
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    
+    <style>
+      html {
+        position: relative;
+        min-height: 100%;
+
+        scroll-behavior: smooth;
+      }
+
+      mark {
+        border-radius: 10px;
+        background-color: #f0f0f0;
+        padding: 0 .2em .1em .2em;
+      }
+
+       
+      div.anchor {
+        display: block;
+        position: relative;
+        top: -60px;
+        visibility: hidden;
+      }
+
+       
+      .hero {
+        width: 100%;
+        height: 100vh;
+        background: #1469cf url("/hero-1.jpg");
+        background-position: 60% 0%;
+        background-size: cover;
+        position: relative;
+      }
+
+      .hero-container {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: end;
+        align-content: flex-end;
+        flex-direction: column;
+        padding: 0 15px 60px 15px;
+      }
+
+      .hero-container a {
+        color: white
+      }
+
+      .carousel-caption {
+        position: relative;
+        left: 0;
+        top: 0;
+      }
+
+      .dotted-hover > li:hover {
+        text-decoration: underline;
+        text-decoration-style: dotted;
+      }
+
+       
+      .certificate-links:hover {
+        text-decoration: none !important;
+      }
+
+      @media (min-width: 768px) {
+        .certificate-logo {
+          height: 200px;
+        }
+      }
+
+       
+      .foto {
+        width: 100%;
+        box-shadow: 5px 10px 5px gray;
+        margin-bottom: 1.25rem;
+      }
+
+       
+      @media (min-width: 576px) {
+        .card-columns {
+          -webkit-column-count: 1;
+          -moz-column-count: 1;
+          column-count: 1;
+        }
+      }
+      @media (min-width: 768px) {
+        .card-columns {
+          -webkit-column-count: 2;
+          -moz-column-count: 2;
+          column-count: 2;
+        }
+      }
+    </style>
     <title>Simon Kerler - Imprint</title>
-    <link href="https://fonts.googleapis.com/css?family=Andada" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/normalize.css">
-    <link rel="stylesheet" href="/assets/css/foundation.css">
-    <link rel="stylesheet" href="/assets/css/nameless.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content="nanoc 4.11.6">
   </head>
+  <body class="d-flex flex-column min-vh-100">
+    <div class="wrapper flex-grow-1">
+      
+      <div id="top"></div>
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
+        <a class="navbar-brand d-lg-none" href="/home/">Simon Kerler</a>
+        <a class="navbar-brand d-none d-lg-inline" href="/">Simon Kerler</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            
+            
+              
+              
+              
 
+              
+                <li class="nav-item ">
+                  <a class="nav-link" href="/home/">Home</a>
+                </li>
+              
+            
+              
+              
+              
 
-  <body>
-    <div class="show-for-small-only">
-    <nav class="top-bar" data-topbar="">
-  <ul class="title-area">
-    <!-- Title Area -->
-    <li class="name">
-      <h1>
-          <a href="/"><img src="/assets/img/namelessvoid-logo.png" alt="n(v*)" width="70px" style="max-width: 50%; width: auto; height:2em; top: 0; left:0; bottom:0;right:0;margin:auto;"></a>
-      </h1>
-    </li>
-    <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
-  </ul>
-  <section class="top-bar-section">
-      <!-- Right Nav Section -->
-      <ul class="right">
-        <li class="divider"></li>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about/">About Me</a></li>
-        <li class="divider"></li>
-        <li><a href="/projects/">Projects</a></li>
-        
-          <li><a href="/projects/n-body-simulation-engine/">N-body Simulation Engine</a></li>
-        
-          <li><a href="/projects/cellplugin/">Cell Plugin</a></li>
-        
-          <li><a href="/projects/pheromander/">Pheromander</a></li>
-        
-          <li><a href="/projects/qrwar/">qrwar</a></li>
-        
-          <li><a href="/projects/blommagraphs/">Blomma Graphs</a></li>
-        
-        <li class="divider"></li>
-        <li><a href="/imprint/">> Imprint</a></li>
-        <li class="divider"></li>
-      </ul>
-    </section>
-</nav>
+              
+                <li class="nav-item ">
+                  <a class="nav-link" href="/about/">About</a>
+                </li>
+              
+            
+              
+              
+              
 
-    </div>
-    <div class="row content">
-      <div class="small-12 medium-3 column paddings show-for-medium-up">
-        <div class="row">
-          <div class="small-12 column margin-bottom">
-  <a href="/"><img src="/assets/img/namelessvoid-logo.png" alt="n(v*)" width="70px" style="max-width: 50%; width: auto; height:2em; top: 0; left:0; bottom:0;right:0;margin:auto;"></a>
-</div>
-<div class="small-12 column">
-  <ul>
-    <li class="active"><a href="/">Home</a></li>
-    <li><a href="/about/">About Me</a></li>
-    <li class="nav-separator"></li>
-    <li><a href="/projects/">Projects</a></li>
-      <ul>
-        
-          <li><a href="/projects/n-body-simulation-engine/">N-body Simulation Engine</a></li>
-        
-          <li><a href="/projects/cellplugin/">Cell Plugin</a></li>
-        
-          <li><a href="/projects/pheromander/">Pheromander</a></li>
-        
-          <li><a href="/projects/qrwar/">qrwar</a></li>
-        
-          <li><a href="/projects/blommagraphs/">Blomma Graphs</a></li>
-        
-      </ul>
-    <li class="nav-separator"></li>
-    <li><a href="/imprint/">> Imprint</a></li>
-  </ul>
-</div>
+              
+                <li class="nav-item ">
+                  <a class="nav-link" href="/certificates-and-conferences/">Certs&amp;Confs</a>
+                </li>
+              
+            
+              
+              
+              
 
+              
+                <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Career
+                  </a>
+
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    
+                        <a class="dropdown-item " href="/career/conntac/">Conntac GmbH</a>
+                    
+                        <a class="dropdown-item " href="/career/fielmann/">Fielmann AG</a>
+                    
+                        <a class="dropdown-item " href="/career/freelancer-2019/">Freelancer</a>
+                    
+                        <a class="dropdown-item " href="/career/dlr-master/">DLR</a>
+                    
+                  </div>
+                </li>
+              
+            
+              
+              
+              
+
+              
+                <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Graduation
+                  </a>
+
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    
+                        <a class="dropdown-item " href="/graduation/master/">Master of Science</a>
+                    
+                        <a class="dropdown-item " href="/graduation/bachelor/">Bachelor of Scienece</a>
+                    
+                  </div>
+                </li>
+              
+            
+              
+              
+              
+
+              
+                <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Studies
+                  </a>
+
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    
+                        <a class="dropdown-item " href="/studies/cell-plugin/">Cell Plugin</a>
+                    
+                        <a class="dropdown-item " href="/studies/pheromander/">Pheromander</a>
+                    
+                        <a class="dropdown-item " href="/studies/blommagraphs/">BlommaGraphs</a>
+                    
+                  </div>
+                </li>
+              
+            
+              
+              
+              
+
+              
+                <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Personal Projects
+                  </a>
+
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    
+                        <a class="dropdown-item " href="/personal/qrwar/">qrwar</a>
+                    
+                  </div>
+                </li>
+              
+            
+              
+              
+              
+
+              
+                <li class="nav-item active">
+                  <a class="nav-link" href="/imprint/">Imprint</a>
+                </li>
+              
+            
+          </ul>
         </div>
-      </div><!-- sidebar column -->
-      <div class="small-12 medium-9 column">
-        <div class="row">
-          <section class="column">
-	<h2>Author and contact</h2>
-	<p>Simon Kerler (namelessvoid)<br/>
-	   E-mail: simon_kerler [et] web.de
-	</p>
-</section>
+      </nav>
+      
 
-<section class="column">
-	<h2>Disclaimer</h2>
-</section>
+      <div class="content">
+        
+        
+    
+        
 
-<section class="column">
-	<h3>1. Content</h3>
-	<p>The author reserves the right not to be responsible for the topicality, correctness, completeness or quality of the information provided. Liability claims regarding damage caused by the use of any information provided, including any kind of information which is incomplete or incorrect,will therefore be rejected.</p>
-	<p>All offers are not-binding and without obligation. Parts of the pages or the complete publication including all offers and information might be extended, changed or partly or completely deleted by the author without separate announcement.</p>
-</section>
+        <div class="container">
+            
+    <div class="row">
+        <h1 class="col-12 mt-3">Impressum</h1>
+        <p class="col-12">Imprint in German language to fulfill legal regulations.</p>
+    </div>
 
-<section class="column">
-	<h3>2. Referrals and links</h3>
-	<p>The author is not responsible for any contents linked or referred to from his pages - unless he has full knowledge of illegal contents and would be able to prevent the visitors of his site fromviewing those pages. If any damage occurs by the use of information presented there, only the author of the respective pages might be liable, not the one who has linked to these pages. Furthermore the author is not liable for any postings or messages published by users of discussion boards, guestbooks or mailinglists provided on his page.</p>
-</section>
+    <div class="row">
+        <h2 class="col-12 mt-3">Verantwortlich für den Inhalt</h2>
+        <p class="col-12">
+            Simon Kerler<br>
+            Stettiner Straße 5<br>
+            25479 Ellerau<br>
+            Deutschland
+        </p>
+    </div>
 
-<section class="column">
-	<h3>3. Copyright</h3>
-	<p>The author intended not to use any copyrighted material for the publication or, if not possible, to indicate the copyright of the respective object.</p>
-	<p>The copyright for any material created by the author is reserved. Any duplication or use of objects such as images, diagrams, sounds or texts in other electronic or printed publications is not permitted without the author's agreement.</p>
-</section>
+    <div class="row mt-3">
+        <h2 class="col-12">Kontaktmöglichkeiten</h2>
+        <p class="col-12">
+            E-Mail-Adresse: <a href="mailto:simon_kerler@web.de">simon_kerler@web.de</a><br>
+        </p>
+    </div>
 
-<section class="column">
-	<h3>4. Privacy policy</h3>
-	<p>If the opportunity for the input of personal or business data (email addresses, name, addresses) is given, the input of these data takes place voluntarily. The use and payment of all offered services are permitted - if and so far technically possible and reasonable - without specification of any personal data or under specification of anonymized data or an alias. The use of published postal addresses, telephone or fax numbers and email addresses for marketing purposes is prohibited, offenders sending unwanted spam messages will be punished.</p>
-</section>
-
-<section class="column">
-	<h3>5. Legal validity of this disclaimer</h3>
-	<div>This disclaimer is to be regarded as part of the internet publication which you were referred from. If sections or individual terms of this statement are not legal or correct, the content or validity of the other parts remain uninfluenced by this fact.</div>
-</section>
+    <div class="row">
+        <h2 class="col-12 mt-3">Haftungs- und Schutzrechtshinweise</h2>
+        <p class="col-12"><strong>Links auf fremde Webseiten</strong>: Inhalte fremder Webseiten, auf die ich direkt oder indirekt verweise, liegen außerhalb meines Verantwortungsbereiches und machen ich mir nicht zu Eigen. Für alle Inhalte und insbesondere für Schäden, die aus der Nutzung der in den verlinkten Webseiten aufrufbaren Informationen entstehen, haftet allein der Anbieter der verlinkten Webseiten.</p>
+        <p class="col-12"><strong>Urheberrechte und Markenrechte</strong>: Alle auf dieser Website dargestellten Inhalte, wie Texte, Fotografien, Grafiken, Marken und Warenzeichen sind durch die jeweiligen Schutzrechte (Urheberrechte, Markenrechte) geschützt. Die Verwendung, Vervielfältigung usw. unterliegen unseren Rechten oder den Rechten der jeweiligen Urheber bzw. Rechteverwalter.</p>
+        <p class="col-12"><strong>Hinweise auf Rechtsverstöße</strong>: Sollten Sie innerhalb meines Internetauftritts Rechtsverstöße bemerken, bitte ich Sie mir auf diese hinzuweisen. Ich werde rechtswidrige Inhalte und Links nach Kenntnisnahme unverzüglich entfernen.</p>
+        <p class="col-12"><a href="https://datenschutz-generator.de/?l=de" title="Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken." target="_blank" rel="noopener noreferrer nofollow">Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas Schwenke</a></p>
+    </div>
 
         </div>
       </div>
+
     </div>
-    <div class="row">
-      <!-- copyright -->
-<hr>
-<div class="small-12 text-center">
-<a href="#top">^ Back to top</a>
-</div>
-<div class="small-12 column">
-<p>&#169; 2014 - 2019 Simon Kerler. This website was published under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a> and was created with <a href="http://nanoc.ws/">nanoc</a>.</p>
-</div><!-- column -->
-<!-- end copyright -->
 
-    </div><!-- footer -->
-        <script src="/assets/js/jquery.js"></script>
-    <script src="/assets/js/foundation_min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+    
+    <footer class="text-center bg-light py-3 mt-4">
+      <span class="mx-1">
+        <a href="#top">Back to top ^</a>
+        <br>
+        © 2020 Simon Kerler via <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">CC BY-SA 3.0</a>. <a href="/imprint/">Imprint</a>. Created with <a href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>.
+      </span>
+    </footer>
+    
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
   </body>
 </html>
